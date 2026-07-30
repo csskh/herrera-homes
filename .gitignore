@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Local tooling / editor
+.claude/
+.vscode/
+
+# Node (not used, but safe)
+node_modules/

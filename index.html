@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+  ============================================================================
+    GEOVANNA HERRERA — REAL ESTATE  ·  FILL-IN PLACEHOLDERS
+  ============================================================================
+    Edit the values below and search the file for each token to replace it.
+    Sensible defaults are already in place where noted.
+
+      • Brand / legal name .... Geovanna Herrera            (default in use)
+      • License / DRE # ........ 446957                      (in use)
+      • Brokerage name ......... Keller Williams Chattahoochee North  (in use)
+      • Contact email .......... [CONTACT_EMAIL]             (footer + form target)
+      • Contact phone .......... +1 (404) 452-6962           (default in use)
+
+    CALLBACK FORM SETUP  →  see the top of  script.js  (ACCESS_KEY).
+    The form is sent to Geovanna via Web3Forms; the email that receives
+    submissions is the one you register at web3forms.com (use her email).
+  ============================================================================
+  -->
+
+  <title>Geovanna Herrera | Atlanta Real Estate</title>
+  <meta name="description" content="Geovanna Herrera — a trusted Atlanta real estate agent helping buyers and sellers across metro Atlanta with elegance, discretion, and care. Arrange a callback today." />
+  <meta name="keywords" content="Atlanta real estate, Geovanna Herrera, Atlanta realtor, buy home Atlanta, sell home Atlanta, luxury homes Atlanta, Georgia real estate agent" />
+  <meta name="author" content="Geovanna Herrera" />
+  <meta name="theme-color" content="#171514" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Geovanna Herrera | Atlanta Real Estate" />
+  <meta property="og:description" content="Atlanta real estate, handled with care. Trusted guidance for buying and selling across metro Atlanta." />
+  <meta property="og:image" content="assets/hero-property.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="canonical" href="https://geovannaherrera.com/" />
+
+  <!-- Fonts: refined serif (headings) + clean sans (body/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data for local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Geovanna Herrera",
+    "description": "Atlanta real estate agent serving buyers and sellers across metro Atlanta.",
+    "areaServed": "Atlanta, Georgia",
+    "telephone": "+1-404-452-6962",
+    "url": "https://geovannaherrera.com/",
+    "image": "assets/geovanna-headshot.jpg",
+    "sameAs": [
+      "https://www.instagram.com/geovannarealtor",
+      "https://www.facebook.com/profile.php?id=61577780979803"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============================ HEADER / NAV ============================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="wordmark" aria-label="Geovanna Herrera — home">
+        <span class="wordmark-name">Geovanna Herrera</span>
+        <span class="wordmark-sub" data-i18n="wordmark_sub">Atlanta Real Estate</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="social-inline" aria-label="Social links">
+            <a href="https://www.instagram.com/geovannarealtor?igsh=MWtrYzNkdWU1eXZvYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.16-.73.36-1.05.68-.32.32-.52.62-.68 1.05-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.16.43.36.73.68 1.05.32.32.62.52 1.05.68.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.16.73-.36 1.05-.68.32-.32.52-.62.68-1.05.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.83 2.83 0 0 0-.68-1.05 2.83 2.83 0 0 0-1.05-.68c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28Zm5.15-2.99a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61577780979803" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.8-.1-1.6-.16-2.4-.15-2.4 0-4.05 1.47-4.05 4.17V9.9H7.5V13h2.75v8h3.25Z"/></svg>
+            </a>
+            <a href="https://wa.me/14044526962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.9c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.8c2.16 0 4.19.84 5.72 2.37a8.06 8.06 0 0 1 2.37 5.73c0 4.47-3.64 8.1-8.11 8.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.05.8.82-2.98-.2-.31a8.05 8.05 0 0 1-1.24-4.3c0-4.47 3.64-8.1 8.12-8.1ZM8.5 7.3c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.77 2.7 4.3 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.09-.4-.13-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.55-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01Z"/></svg>
+            </a>
+          </div>
+
+          <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
+            <span class="lang-opt" data-lang="en">EN</span>
+            <span class="lang-sep">/</span>
+            <span class="lang-opt" data-lang="es">ES</span>
+          </button>
+
+          <button type="button" class="btn btn-primary btn-callback" data-open-callback data-i18n="cta_callback">Arrange a Callback</button>
+        </div>
+      </nav>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="assets/hero-property.jpg" alt="Contemporary luxury home with a swimming pool and floor-to-ceiling glass, at dusk" width="1900" height="1267" fetchpriority="high" />
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Atlanta · Georgia</p>
+        <h1 class="hero-title" data-i18n="hero_title">Atlanta Real Estate,<br />Handled with Care</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Thoughtful, discreet guidance for buyers and sellers across metro Atlanta — from first showing to final signature.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary" data-open-callback data-i18n="cta_callback">Arrange a Callback</button>
+          <a href="#about" class="btn btn-ghost" data-i18n="hero_secondary">Meet Geovanna</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span data-i18n="scroll">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="assets/geovanna-headshot.jpg" alt="Portrait of Geovanna Herrera, Atlanta real estate agent" width="800" height="915" loading="lazy" />
+        </div>
+        <div class="about-body reveal">
+          <p class="eyebrow" data-i18n="about_eyebrow">Meet Geovanna</p>
+          <h2 class="section-title" data-i18n="about_title">A trusted partner for your next move in Atlanta.</h2>
+          <!-- PLACEHOLDER BIO — edit freely -->
+          <p data-i18n="about_p1">Geovanna Herrera brings a calm, detail-driven approach to one of life's biggest decisions. Based in Atlanta, fluent in English and Spanish, she guides clients through buying or selling with clarity, honesty, and genuine care.</p>
+          <p data-i18n="about_p2">Whether you're purchasing your first home, right-sizing, or listing a property you've loved for years, Geovanna handles every detail — pricing, negotiation, and paperwork — so the process feels considered rather than rushed. Her goal is simple: the right outcome, and a client who feels looked after from start to finish.</p>
+          <ul class="about-points">
+            <li data-i18n="about_point1">Serving buyers &amp; sellers across metro Atlanta</li>
+            <li data-i18n="about_point2">Bilingual service — English &amp; Español</li>
+            <li data-i18n="about_point3">Discreet, personal, one-to-one attention</li>
+          </ul>
+          <button type="button" class="btn btn-outline" data-open-callback data-i18n="cta_callback">Arrange a Callback</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section class="services section section-alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="services_eyebrow">Why work with me</p>
+          <h2 class="section-title" data-i18n="services_title">Considered guidance at every stage.</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-num">01</span>
+            <h3 class="card-title" data-i18n="service1_title">Buying</h3>
+            <p data-i18n="service1_body">From your first showing to closing day, I help you find the right home at the right price — with patient advice and sharp negotiation on your side.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">02</span>
+            <h3 class="card-title" data-i18n="service2_title">Selling</h3>
+            <p data-i18n="service2_body">Thoughtful pricing, elegant presentation, and targeted marketing to bring your property to the right buyers and the strongest possible offer.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">03</span>
+            <h3 class="card-title" data-i18n="service3_title">Consultation</h3>
+            <p data-i18n="service3_body">Not sure where to begin? A relaxed, no-pressure conversation about your goals, the current market, and the smartest next step for you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ GALLERY / CAROUSEL ============================
+      NOTE: these are royalty-free placeholder property photos (Unsplash License,
+      commercial use OK). Swap them for Geovanna's real listing photos in assets/
+      and update the captions below (or their translations in script.js). -->
+    <section class="gallery section" id="gallery" aria-roledescription="carousel" aria-label="Property gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="gallery_eyebrow">A glimpse</p>
+          <h2 class="section-title" data-i18n="gallery_title">Homes &amp; interiors, beautifully presented.</h2>
+        </div>
+      </div>
+
+      <div class="carousel reveal" id="carousel">
+        <div class="carousel-viewport">
+          <ul class="carousel-track" id="carouselTrack">
+            <li class="slide" role="group" aria-roledescription="slide">
+              <figure>
+                <img src="assets/gallery-villa-pool.jpg" alt="Modern white villa with a swimming pool framed by palm trees" width="1900" height="1267" loading="lazy" />
+                <figcaption>
+                  <span class="slide-title" data-i18n="gallery_cap1_t">Contemporary Estate</span>
+                  <span class="slide-loc" data-i18n="gallery_cap1_l">Buckhead, Atlanta</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slide" role="group" aria-roledescription="slide">
+              <figure>
+                <img src="assets/gallery-living.jpg" alt="Bright open-plan living room with a floating staircase and pool view" width="1900" height="1267" loading="lazy" />
+                <figcaption>
+                  <span class="slide-title" data-i18n="gallery_cap2_t">Light-Filled Living</span>
+                  <span class="slide-loc" data-i18n="gallery_cap2_l">Vinings</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slide" role="group" aria-roledescription="slide">
+              <figure>
+                <img src="assets/gallery-kitchen.jpg" alt="Minimalist chef's kitchen with a large marble island and oak cabinetry" width="1900" height="1267" loading="lazy" />
+                <figcaption>
+                  <span class="slide-title" data-i18n="gallery_cap3_t">Chef's Kitchen</span>
+                  <span class="slide-loc" data-i18n="gallery_cap3_l">Midtown Residence</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slide" role="group" aria-roledescription="slide">
+              <figure>
+                <img src="assets/gallery-evening-home.jpg" alt="Warmly lit home at dusk surrounded by a landscaped garden" width="1900" height="1267" loading="lazy" />
+                <figcaption>
+                  <span class="slide-title" data-i18n="gallery_cap4_t">Evening Retreat</span>
+                  <span class="slide-loc" data-i18n="gallery_cap4_l">Sandy Springs</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slide" role="group" aria-roledescription="slide">
+              <figure>
+                <img src="assets/gallery-bathroom.jpg" alt="Modern spa-style bathroom with a walk-in glass shower and marble vanity" width="1900" height="1267" loading="lazy" />
+                <figcaption>
+                  <span class="slide-title" data-i18n="gallery_cap5_t">Spa Bath</span>
+                  <span class="slide-loc" data-i18n="gallery_cap5_l">Alpharetta</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slide" role="group" aria-roledescription="slide">
+              <figure>
+                <img src="assets/gallery-lounge.jpg" alt="Sunlit lounge with a leather sofa and a gallery wall of framed photographs" width="1900" height="1267" loading="lazy" />
+                <figcaption>
+                  <span class="slide-title" data-i18n="gallery_cap6_t">Skyline Lounge</span>
+                  <span class="slide-loc" data-i18n="gallery_cap6_l">Downtown Atlanta</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button type="button" class="carousel-btn next" id="carouselNext" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose slide"></div>
+      </div>
+    </section>
+
+    <!-- ============================ LIFESTYLE BAND ============================ -->
+    <section class="lifestyle" aria-label="Lifestyle">
+      <div class="lifestyle-media">
+        <img src="assets/living-room-interior.jpg" alt="Bright, upscale open-plan living room in a modern luxury home" width="1600" height="1067" loading="lazy" />
+        <div class="lifestyle-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container lifestyle-content reveal">
+        <p class="eyebrow eyebrow-light" data-i18n="lifestyle_eyebrow">The right home</p>
+        <p class="lifestyle-tagline" data-i18n="lifestyle_tagline">A home is more than an address. It's where your next chapter begins.</p>
+      </div>
+    </section>
+
+    <!-- ============================ CALLBACK / CONTACT ============================ -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-i18n="contact_eyebrow">Let's talk</p>
+          <h2 class="section-title" data-i18n="contact_title">Arrange a callback.</h2>
+          <p class="contact-lead" data-i18n="contact_lead">Share a few details and the best time to reach you. Geovanna will personally call you back to talk through your goals — no obligation.</p>
+          <ul class="contact-details">
+            <li>
+              <span class="contact-label" data-i18n="contact_phone_label">Phone</span>
+              <a href="tel:+14044526962">+1 (404) 452-6962</a>
+            </li>
+            <li>
+              <span class="contact-label" data-i18n="contact_wa_label">WhatsApp</span>
+              <a href="https://wa.me/14044526962" target="_blank" rel="noopener noreferrer">+1 (404) 452-6962</a>
+            </li>
+            <li>
+              <span class="contact-label" data-i18n="contact_area_label">Serving</span>
+              <span data-i18n="contact_area">Atlanta &amp; metro Georgia</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-card reveal">
+          <h3 class="contact-card-title" data-i18n="contact_card_title">Request your callback</h3>
+          <p class="contact-card-sub" data-i18n="contact_card_sub">It takes less than a minute.</p>
+          <button type="button" class="btn btn-primary btn-block" data-open-callback data-i18n="cta_callback">Arrange a Callback</button>
+          <p class="contact-card-note" data-i18n="contact_card_note">Prefer to message? Reach Geovanna directly on WhatsApp.</p>
+          <a class="btn btn-outline btn-block" href="https://wa.me/14044526962" target="_blank" rel="noopener noreferrer" data-i18n="contact_wa_btn">Message on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="wordmark-name">Geovanna Herrera</span>
+        <p class="footer-tag" data-i18n="footer_tag">Atlanta real estate, handled with care.</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.instagram.com/geovannarealtor?igsh=MWtrYzNkdWU1eXZvYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn social-instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.16-.73.36-1.05.68-.32.32-.52.62-.68 1.05-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.16.43.36.73.68 1.05.32.32.62.52 1.05.68.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.16.73-.36 1.05-.68.32-.32.52-.62.68-1.05.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.83 2.83 0 0 0-.68-1.05 2.83 2.83 0 0 0-1.05-.68c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28Zm5.15-2.99a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61577780979803" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn social-facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://wa.me/14044526962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-btn social-whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.9c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm3.51 5.3c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.77 2.7 4.3 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.09-.4-.13-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.55-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="footer-legal">
+        <img class="footer-logo" src="assets/logo-realtor.png" alt="REALTOR and Equal Housing Opportunity logos" width="220" height="114" loading="lazy" />
+        <p class="footer-license">
+          <span data-i18n="footer_license">License #</span> 446957
+          <span class="dot">·</span>
+          Keller Williams Chattahoochee North
+        </p>
+        <p class="footer-disclaimer" data-i18n="footer_disclaimer">
+          Equal Housing Opportunity. All information is deemed reliable but not guaranteed. Each office is independently owned and operated. Geovanna Herrera is a licensed real estate agent serving Atlanta, Georgia.
+        </p>
+        <p class="footer-copy">© <span id="year">2026</span> Geovanna Herrera. <span data-i18n="footer_rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ FLOATING WHATSAPP ============================ -->
+  <a href="https://wa.me/14044526962" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.9c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.51 12.9c-.21.59-1.21 1.12-1.69 1.19-.43.06-.98.09-1.58-.1-.36-.12-.83-.27-1.43-.53-2.53-1.09-4.17-3.62-4.3-3.79-.13-.17-1.03-1.36-1.03-2.6 0-1.24.65-1.85.88-2.1.23-.25.5-.31.67-.31.17 0 .34 0 .48.01.16 0 .36-.06.56.42.22.5.71 1.73.77 1.85.06.13.1.27.02.44-.08.17-.12.27-.25.42-.12.15-.26.33-.37.44-.12.12-.25.25-.11.5.15.25.65 1.07 1.39 1.73.95.85 1.76 1.11 2.01 1.24.25.12.4.1.54-.06.15-.17.62-.73.79-.98.16-.25.33-.21.56-.12.23.08 1.46.69 1.71.81.25.12.42.19.48.29.06.1.06.6-.15 1.18Z"/></svg>
+  </a>
+
+  <!-- ============================ CALLBACK MODAL ============================ -->
+  <div class="modal" id="callbackModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-callback></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" data-close-callback aria-label="Close">&times;</button>
+
+      <div class="modal-body">
+        <p class="eyebrow" data-i18n="modal_eyebrow">Arrange a Callback</p>
+        <h2 class="modal-title" id="modalTitle" data-i18n="modal_title">Let's find a time to talk.</h2>
+        <p class="modal-sub" data-i18n="modal_sub">Fill in your details and Geovanna will call you back at the time that suits you best.</p>
+
+        <form class="callback-form" id="callbackForm" novalidate>
+          <!-- Web3Forms sends this submission to Geovanna's registered email. Key is set in script.js -->
+          <div class="field">
+            <label for="cf-name" data-i18n="form_name">Full Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required />
+            <span class="field-error" data-i18n="err_required">This field is required.</span>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="cf-email" data-i18n="form_email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required />
+              <span class="field-error" data-i18n="err_email">Please enter a valid email.</span>
+            </div>
+            <div class="field">
+              <label for="cf-phone" data-i18n="form_phone">Phone</label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel" required />
+              <span class="field-error" data-i18n="err_required">This field is required.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-time" data-i18n="form_time">Best time to call</label>
+            <select id="cf-time" name="best_time" required>
+              <option value="" data-i18n="form_time_ph">Select a time…</option>
+              <option value="morning" data-i18n="form_time_morning">Morning (8am – 12pm)</option>
+              <option value="afternoon" data-i18n="form_time_afternoon">Afternoon (12pm – 5pm)</option>
+              <option value="evening" data-i18n="form_time_evening">Evening (5pm – 8pm)</option>
+              <option value="anytime" data-i18n="form_time_anytime">Anytime</option>
+            </select>
+            <span class="field-error" data-i18n="err_required">This field is required.</span>
+          </div>
+
+          <div class="field">
+            <label for="cf-message" data-i18n="form_message">Message</label>
+            <textarea id="cf-message" name="message" rows="3"></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" id="cf-consent" name="consent" required />
+            <span data-i18n="form_consent">I agree to be contacted by Geovanna Herrera about my real estate enquiry.</span>
+          </label>
+          <span class="field-error consent-error" data-i18n="err_consent">Please confirm you agree to be contacted.</span>
+
+          <!-- Honeypot anti-spam field (hidden from users) -->
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <button type="submit" class="btn btn-primary btn-block form-submit" data-i18n="form_submit">Request Callback</button>
+          <p class="form-privacy" data-i18n="form_privacy">Your details are only used to arrange your callback and are never shared.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess" hidden>
+          <div class="success-mark" aria-hidden="true">✓</div>
+          <h3 data-i18n="success_title">Thank you — your request is in.</h3>
+          <p data-i18n="success_body">Geovanna has received your details and will call you back at your preferred time. Talk soon!</p>
+          <button type="button" class="btn btn-outline" data-close-callback data-i18n="success_close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
