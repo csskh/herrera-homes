@@ -17,7 +17,7 @@
    That's it — submissions will now arrive in Geovanna's inbox. No server,
    no database. (Prefer Formspree instead? See the note further down.)
    ========================================================================== */
-const FORM_ACCESS_KEY = "[ACCESS_KEY]";              // <-- paste Web3Forms access key here
+const FORM_ACCESS_KEY = "c67853ea-006f-4052-bbcb-cd3c2cace8c5";  // Web3Forms access key
 const FORM_ENDPOINT   = "https://api.web3forms.com/submit";  // Web3Forms endpoint (leave as-is)
 
 /*  --- Using Formspree instead? ---
